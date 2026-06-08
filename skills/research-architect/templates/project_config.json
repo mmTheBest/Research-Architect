@@ -1,0 +1,28 @@
+{
+  "project_name": "",
+  "workflow": "brainstorm_from_scratch | build_from_materials | draft_from_results | revise_existing_draft",
+  "topic_or_raw_idea": "",
+  "current_assets": {
+    "notes": [],
+    "data": [],
+    "code": [],
+    "experiments": [],
+    "figures": [],
+    "draft_fragments": [],
+    "references": []
+  },
+  "constraints": {
+    "time": "",
+    "resources": "",
+    "methods_that_must_or_cannot_be_used": [],
+    "data_that_must_or_cannot_be_used": [],
+    "ethical_or_access_constraints": []
+  },
+  "desired_output": "research_plan | first_draft | revision_plan",
+  "output_language": "en",
+  "reference_mode": "local_first | specified_paths | web",
+  "reference_paths": ["."],
+  "citation_target_count": 30,
+  "user_initial_motivation": "",
+  "confirmed_research_spine": ""
+}

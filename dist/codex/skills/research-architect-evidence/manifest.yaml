@@ -1,0 +1,4 @@
+name: research-architect-evidence
+description: "Builds an evidence bank, claim register, and figure plan from available results or executed study outputs."
+version: 0.2.0
+entrypoint: SKILL.md

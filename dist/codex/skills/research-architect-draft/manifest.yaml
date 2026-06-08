@@ -1,0 +1,4 @@
+name: research-architect-draft
+description: "Builds the first complete research-paper draft from the confirmed spine, evidence bank, claim register, citation bank, and writing rationale matrix."
+version: 0.2.0
+entrypoint: SKILL.md
