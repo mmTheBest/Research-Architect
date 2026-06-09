@@ -1,8 +1,24 @@
 # Installation
 
+## One-line installation
+
+Run one of these commands from the package root after downloading or cloning this repository.
+
+**Codex:**
+
+```bash
+mkdir -p "$HOME/.codex/skills" && cp -R dist/codex/skills/* "$HOME/.codex/skills/"
+```
+
+**Claude Code:**
+
+```bash
+mkdir -p "$HOME/.claude/skills" && cp -R dist/codex/skills/* "$HOME/.claude/skills/"
+```
+
 ## Flat skill installation
 
-Copy every folder under:
+The one-line commands above copy every folder under:
 
 ```text
 dist/codex/skills/
