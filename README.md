@@ -6,7 +6,7 @@ It provides an end-to-end research workflow for building a study from scratch: s
 
 ## Mental model
 
-![Research Architect mental model](assets/research-architect-mental-model.svg)
+![Research Architect mental model](assets/research-architect-mental-model.png)
 
 Research Architect can run end-to-end or one branch at a time. The core idea is simple: preserve a transparent trail from raw idea to research spine, study design, evidence, claims, citation support, draft, and audit.
 
