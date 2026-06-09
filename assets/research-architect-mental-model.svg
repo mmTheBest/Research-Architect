@@ -9,12 +9,12 @@
       .dash { fill: none; stroke: #111; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 12 12; }
       .box { fill: #fffefb; stroke: #111; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
       .smallbox { fill: #fffefb; stroke: #111; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
-      .title { font: 48px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
-      .h2 { font: 31px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
-      .label { font: 25px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
-      .small { font: 21px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
-      .tiny { font: 18px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
-      .num { font: 22px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
+      .title { font: 42px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
+      .h2 { font: 27px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
+      .label { font: 18px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
+      .small { font: 14px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
+      .tiny { font: 15px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
+      .num { font: 16px "Comic Sans MS", "Bradley Hand", "Segoe Print", cursive; fill: #111; }
     </style>
   </defs>
 
@@ -115,7 +115,7 @@
   <circle class="thin" cx="1283" cy="335" r="10"/><circle class="thin" cx="1258" cy="317" r="8"/><circle class="thin" cx="1309" cy="314" r="8"/><circle class="thin" cx="1262" cy="360" r="8"/><circle class="thin" cx="1313" cy="362" r="8"/><path class="thin" d="M1275 329 l-12 -8 M1290 328 l14 -10 M1276 342 l-10 14 M1291 343 l15 14"/>
 
   <rect class="smallbox" x="1504" y="292" width="240" height="86" rx="9"/>
-  <text class="small" x="1580" y="343">Study design</text>
+  <text class="small" x="1648" y="343">Study design</text>
   <path class="thin" d="M1542 309 h28 v22 h-28 z M1517 349 h22 v22 h-22 z M1568 349 h22 v22 h-22 z M1618 349 h22 v22 h-22 z M1556 331 v10 h73 v8 M1556 341 h-28 v8 M1556 341 h24 v8"/>
 
   <rect class="smallbox" x="1248" y="394" width="240" height="86" rx="9"/>
@@ -127,7 +127,7 @@
   <path class="thin" d="M1526 411 h45 v62 h-45 z M1536 426 l6 6 l12 -14 M1538 443 h22 M1538 457 h22"/>
 
   <rect class="smallbox" x="1248" y="496" width="240" height="86" rx="9"/>
-  <text class="small" x="1320" y="544">Citation support bank</text>
+  <text class="small" x="1360" y="536">Citation support</text><text class="small" x="1410" y="560">bank</text>
   <text class="h2" x="1265" y="545">"</text><path class="thin" d="M1295 518 h45 M1295 535 h70 M1295 552 h58"/>
 
   <rect class="smallbox" x="1504" y="496" width="240" height="86" rx="9"/>
@@ -135,15 +135,15 @@
   <path class="thin" d="M1525 512 h52 v56 h-52 z M1536 526 h28 M1536 540 h20 M1536 554 h29"/>
 
   <rect class="smallbox" x="1248" y="598" width="240" height="86" rx="9"/>
-  <text class="small" x="1320" y="646">Writing rationale matrix</text>
+  <text class="small" x="1340" y="646">Writing rationale matrix</text>
   <path class="thin" d="M1266 615 h55 v50 h-55 z M1266 631 h55 M1266 648 h55 M1284 615 v50 M1303 615 v50"/>
 
   <rect class="smallbox" x="1504" y="598" width="240" height="86" rx="9"/>
-  <text class="small" x="1580" y="646">First draft</text>
+  <text class="small" x="1648" y="646">First draft</text>
   <path class="thin" d="M1526 614 h44 l14 14 v47 h-58 z M1570 614 v14 h14 M1595 650 l34 -34 l14 14 l-34 34 l-19 5 z"/>
 
   <rect class="smallbox" x="1248" y="700" width="496" height="70" rx="9"/>
-  <text class="small" x="1392" y="745">Audit report</text>
+  <text class="small" x="1430" y="745">Audit report</text>
   <path class="thin" d="M1358 717 l22 -10 l22 10 v22 q-5 23 -22 34 q-17 -11 -22 -34 z M1372 737 l8 8 l18 -23"/>
 
   <rect class="box" x="76" y="792" width="814" height="176" rx="14"/>
@@ -156,7 +156,7 @@
   <path class="thin" d="M404 849 l38 -16 l38 16 v38 q-6 39 -38 58 q-32 -19 -38 -58 z M423 884 l14 14 l31 -42"/>
   <text class="small" x="492" y="873">Auditable</text><text class="small" x="492" y="905">research trail</text>
   <path class="thin" d="M672 899 l60 -63 l34 34 l-60 63 l-30 8 z M732 836 l25 -22 l25 25 l-24 22 M689 883 l34 34"/>
-  <text class="small" x="774" y="873">From idea to</text><text class="small" x="774" y="905">credible first draft</text>
+  <text class="small" x="770" y="862">From idea</text><text class="small" x="770" y="892">to credible</text><text class="small" x="770" y="922">first draft</text>
 
   <rect class="dash" x="970" y="790" width="748" height="178" rx="18"/>
   <path class="thin" d="M1202 807 h25 v29 h-25 z M1208 807 v-17 q0 -17 13 -17 q13 0 13 17 v17"/>
