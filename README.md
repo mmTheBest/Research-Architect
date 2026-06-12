@@ -1,6 +1,6 @@
 # Research Architect Skill Suite
 
-[English](README.en.md) | 简体中文
+[English](en/) | 简体中文
 
 **Research Architect** 是一套用于科研选题、研究设计和论文写作的 workflow skill suite。它把论文写作中最容易卡住的部分拆成可执行步骤：从参考文献中提炼选题思路，判断题目难度，明确 research gap，定义创新点，设计实验，组织证据，并把零散材料收束成清晰的论文主线。
 

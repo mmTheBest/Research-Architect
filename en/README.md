@@ -1,6 +1,6 @@
 # Research Architect Skill Suite
 
-English | [简体中文](README.md)
+English | [简体中文](../)
 
 **Research Architect** is a research workflow skill suite for moving from a raw topic, partial materials, or scattered results to a coherent research-paper draft.
 
