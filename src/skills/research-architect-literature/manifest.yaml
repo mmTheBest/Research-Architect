@@ -1,0 +1,4 @@
+name: research-architect-literature
+description: "Builds a structured literature, gap, and exemplar map for first-paper construction without copying exemplar content."
+version: 0.2.0
+entrypoint: SKILL.md

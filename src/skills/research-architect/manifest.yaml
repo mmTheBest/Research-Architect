@@ -1,0 +1,4 @@
+name: research-architect
+description: "End-to-end research brainstorming and first-paper construction workflow from raw idea or materials to research spine, study design, evidence bank, first draft, and audit."
+version: 0.2.0
+entrypoint: SKILL.md

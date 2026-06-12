@@ -2,31 +2,41 @@
 
 ## One-line installation
 
-Run one of these commands from the package root after downloading or cloning this repository.
+Run one of these commands from the repository root after downloading or cloning this repository.
 
 **Codex:**
 
 ```bash
-mkdir -p "$HOME/.codex/skills" && cp -R dist/codex/skills/* "$HOME/.codex/skills/"
+CODEX_SKILLS_DIR="${CODEX_HOME:-$HOME/.codex}/skills" && mkdir -p "$CODEX_SKILLS_DIR" && cp -R dist/codex/skills/. "$CODEX_SKILLS_DIR/"
 ```
 
 **Claude Code:**
 
 ```bash
-mkdir -p "$HOME/.claude/skills" && cp -R dist/codex/skills/* "$HOME/.claude/skills/"
+CLAUDE_SKILLS_DIR="${CLAUDE_HOME:-$HOME/.claude}/skills" && mkdir -p "$CLAUDE_SKILLS_DIR" && cp -R dist/codex/skills/. "$CLAUDE_SKILLS_DIR/"
 ```
 
-## Flat skill installation
+## Release artifact installation
 
-The one-line commands above copy every folder under:
+The repository includes a packaged release artifact:
 
 ```text
-dist/codex/skills/
+release/research-architect-codex-skills.tar.gz
 ```
 
-to your local skill folder.
+Install it into Codex with:
 
-Expected layout after copying:
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}" && tar -xzf release/research-architect-codex-skills.tar.gz -C "${CODEX_HOME:-$HOME/.codex}"
+```
+
+Install it into Claude Code with:
+
+```bash
+mkdir -p "${CLAUDE_HOME:-$HOME/.claude}" && tar -xzf release/research-architect-codex-skills.tar.gz -C "${CLAUDE_HOME:-$HOME/.claude}"
+```
+
+## Expected layout after installation
 
 ```text
 skills/research-architect/SKILL.md
@@ -40,17 +50,15 @@ skills/research-architect-draft/SKILL.md
 skills/research-architect-audit/SKILL.md
 ```
 
-## Self-contained references
+## Source of truth
 
-Shared references and templates are included under:
+`src/` is the canonical source tree. `dist/codex/skills/` and `release/` are generated outputs.
 
-```text
-src/references/
-src/templates/
-src/scripts/
+To rebuild generated outputs from `src/`, run:
+
+```bash
+python src/scripts/build_release.py
 ```
-
-If your skill host expects each skill to be fully self-contained, copy `src/references`, `src/templates`, and `src/scripts` into the relevant skill folder.
 
 ## Validation
 
@@ -60,4 +68,4 @@ Run:
 python src/scripts/validate_skill_package.py .
 ```
 
-A valid package should report all required skill folders and supporting files as present.
+A valid package should report all required source skills, generated install skills, supporting files, and release artifacts as present.

@@ -1,0 +1,4 @@
+name: research-architect-audit
+description: "Audits the first-paper workflow artifacts and draft for spine clarity, evidence traceability, citation integrity, copying risk, and overclaiming."
+version: 0.2.0
+entrypoint: SKILL.md

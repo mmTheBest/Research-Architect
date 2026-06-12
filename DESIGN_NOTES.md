@@ -23,6 +23,10 @@ The branch structure allows users to stop at the actual bottleneck:
 - draft exists but weak: use audit;
 - complete path needed: use the orchestrator.
 
+## Why `src/` is the source of truth
+
+`src/` now owns the canonical skill definitions, references, templates, and scripts. `dist/codex/skills/` is generated install output, and `release/` contains packaged install artifacts. The previous top-level `skills/` duplicate was removed to avoid source drift.
+
 ## Why no rank-label calibration
 
 A rigorous first paper should be calibrated by the available evidence, audience, format, and constraints, not by a rank label. The package therefore removes the earlier rank-label framing.

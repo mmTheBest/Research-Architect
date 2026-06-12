@@ -1,0 +1,4 @@
+name: research-architect-intake
+description: "Collects project state, materials, constraints, and desired output for the Research Architect workflow."
+version: 0.2.0
+entrypoint: SKILL.md

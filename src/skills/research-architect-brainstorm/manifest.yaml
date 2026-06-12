@@ -1,0 +1,4 @@
+name: research-architect-brainstorm
+description: "Converts a raw topic or scattered materials into feasible research-question candidates and candidate research spines."
+version: 0.2.0
+entrypoint: SKILL.md

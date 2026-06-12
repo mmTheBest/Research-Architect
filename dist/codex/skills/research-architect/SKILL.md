@@ -116,7 +116,7 @@ If most rows say only “improve clarity” or “write background,” the bluep
 
 ## Quality gate
 
-Read `src/references/quality-gates.md`. A draft is blocked if:
+Read `references/quality-gates.md`. A draft is blocked if:
 
 - no confirmed research spine exists;
 - central claims lack evidence IDs or citation IDs;
