@@ -1,6 +1,6 @@
 # Research Architect Skill Suite
 
-English | [简体中文](../)
+English | [简体中文](https://github.com/mmTheBest/Research-Architect)
 
 **Research Architect** is a research workflow skill suite for moving from a raw topic, partial materials, or scattered results to a coherent research-paper draft.
 
@@ -8,7 +8,7 @@ It provides an end-to-end research workflow for building a study from scratch: s
 
 ## Mental model
 
-![Research Architect mental model](assets/research-architect-mental-model.png)
+![Research Architect mental model](../assets/research-architect-mental-model.png)
 
 Research Architect can run end-to-end or one branch at a time. The core idea is simple: preserve a transparent trail from raw idea to research spine, study design, evidence, claims, citation support, draft, and audit.
 
@@ -147,8 +147,8 @@ External papers are used to learn structure, problem framing, method logic, expe
 
 ## License
 
-This project is released under the MIT License. See [LICENSE](LICENSE).
+This project is released under the MIT License. See [LICENSE](../LICENSE).
 
 ## Changelog
 
-Future versions will add skill evals, expand validation, and tune skill descriptions so Codex and Claude route to the right branch skill more reliably. See [CHANGELOG.md](CHANGELOG.md).
+Future versions will add skill evals, expand validation, and tune skill descriptions so Codex and Claude route to the right branch skill more reliably. See [CHANGELOG.md](../CHANGELOG.md).
