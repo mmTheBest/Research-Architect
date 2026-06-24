@@ -1,4 +1,4 @@
 name: research-architect-design
-description: "Converts a confirmed research spine into an executable study, experiment, analysis, or validation plan."
-version: 0.2.0
+description: "Converts a confirmed research spine and exemplar adaptation plan into an executable, field-appropriate inquiry, analysis, validation, and user action plan."
+version: 0.3.0
 entrypoint: SKILL.md

@@ -1,0 +1,85 @@
+{
+  "fixture_id": "RA-REF-CASE-001",
+  "title": "Adapt a comparative policy-implementation design to university AI governance",
+  "design_family": "case_comparative_historical_process",
+  "target_reference": {
+    "research_logic": [
+      "Select contrasting cases that vary on a theoretically important institutional condition.",
+      "Reconstruct implementation chronologies from documents and interviews.",
+      "Compare within-case process evidence before making cross-case claims.",
+      "Evaluate rival explanations for divergent outcomes."
+    ],
+    "strengths": [
+      "Case selection creates explanatory leverage.",
+      "Chronology prevents outcomes from being interpreted without process evidence.",
+      "Rival explanations make the mechanism claim auditable."
+    ],
+    "context_bound_elements": [
+      "The original cases have comparable administrative records.",
+      "The original policy has a clear implementation start date.",
+      "The original outcome measure is unavailable for universities."
+    ]
+  },
+  "user_project": {
+    "topic": "Why universities with similar generative-AI policies develop different classroom implementation practices.",
+    "available_materials": [
+      "Policy documents from three universities.",
+      "Public meeting minutes and guidance documents.",
+      "Potential interviews with faculty and administrators."
+    ],
+    "constraints": [
+      "Uneven document access.",
+      "No representative faculty survey.",
+      "Policy implementation dates are partly ambiguous."
+    ]
+  },
+  "expected": {
+    "required_extraction_dimensions": [
+      "case-selection logic",
+      "temporal boundary",
+      "source provenance",
+      "within-case analysis",
+      "cross-case comparison",
+      "process evidence",
+      "rival explanations",
+      "analytical generalization"
+    ],
+    "required_adaptation_moves": [
+      {
+        "reference_move": "Select two cases with strong contrast on one institutional condition.",
+        "decision": "ADAPT",
+        "required_user_action": "Select universities based on governance centralization and policy enforcement while documenting other major differences."
+      },
+      {
+        "reference_move": "Use a single official implementation date.",
+        "decision": "REPLACE",
+        "required_user_action": "Construct an event chronology with multiple policy and implementation milestones."
+      },
+      {
+        "reference_move": "Use the same administrative outcome measure across cases.",
+        "decision": "REPLACE",
+        "required_user_action": "Define comparable implementation indicators from documents and interviews, with source-specific uncertainty."
+      }
+    ],
+    "required_design_components": [
+      "case-selection rationale",
+      "case boundaries",
+      "source inventory and provenance",
+      "chronology",
+      "within-case evidence chains",
+      "cross-case comparison",
+      "rival-explanation matrix",
+      "missing-source analysis",
+      "analytical-generalization boundary"
+    ],
+    "required_claim_boundaries": [
+      "The comparison may support a bounded explanation of implementation differences.",
+      "Transfer to other universities depends on matching institutional conditions."
+    ],
+    "forbidden_inferences": [
+      "The selected universities statistically represent higher education.",
+      "Temporal sequence alone proves the proposed mechanism.",
+      "Missing records can be treated as evidence that an event did not occur."
+    ]
+  }
+}

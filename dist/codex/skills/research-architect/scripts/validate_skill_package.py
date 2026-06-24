@@ -23,12 +23,34 @@ REQUIRED_REFERENCES = [
     "research-spine.md",
     "brainstorming-framework.md",
     "literature-map-framework.md",
+    "design-family-grammars.md",
     "study-design-framework.md",
     "claim-evidence-framework.md",
     "first-draft-architecture.md",
     "citation-support-bank.md",
     "quality-gates.md",
     "ethics-and-boundaries.md",
+]
+
+REQUIRED_TEMPLATES = [
+    "project_config.json",
+    "exemplar_logic_profile.md",
+    "exemplar_adaptation_plan.md",
+    "study_design_brief.md",
+    "study_component_registry.csv",
+    "evidence_bank.csv",
+    "claim_register.csv",
+    "evidence_display_map.csv",
+    "section_blueprints.md",
+    "writing_rationale_matrix.csv",
+]
+
+REQUIRED_SCRIPTS = [
+    "build_release.py",
+    "first_paper_artifact_check.py",
+    "make_source_index.py",
+    "validate_skill_package.py",
+    "check_reference_adaptation_fixtures.py",
 ]
 
 BANNED_PHRASES = [
@@ -66,6 +88,32 @@ def check_skill_dir(skills_dir: Path, label: str) -> None:
                 fail(f"banned phrase '{phrase}' found in {skill_md}")
 
 
+def check_required_files(directory: Path, required: list[str], label: str) -> None:
+    if not directory.exists():
+        fail(f"missing {label}: {directory}")
+    for name in required:
+        path = directory / name
+        if not path.exists():
+            fail(f"missing {label} file: {path}")
+        if path.is_file() and path.stat().st_size == 0:
+            fail(f"empty {label} file: {path}")
+
+
+def check_reference_fixtures(root: Path) -> None:
+    fixture_dir = root / "evals" / "reference_adaptation"
+    expected = {
+        "quantitative_associational.json",
+        "qualitative_interpretive.json",
+        "comparative_case.json",
+        "mixed_methods.json",
+    }
+    if not fixture_dir.exists():
+        fail(f"missing reference-adaptation fixtures: {fixture_dir}")
+    missing = sorted(name for name in expected if not (fixture_dir / name).exists())
+    if missing:
+        fail(f"missing reference-adaptation fixture files: {', '.join(missing)}")
+
+
 def main() -> None:
     root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
     if not root.exists():
@@ -77,16 +125,10 @@ def main() -> None:
     check_skill_dir(root / "src" / "skills", "source skills")
     check_skill_dir(root / "dist" / "codex" / "skills", "generated Codex skills")
 
-    ref_dir = root / "src" / "references"
-    if not ref_dir.exists():
-        fail("missing src/references")
-    for ref in REQUIRED_REFERENCES:
-        if not (ref_dir / ref).exists():
-            fail(f"missing reference {ref}")
-
-    template_dir = root / "src" / "templates"
-    if not template_dir.exists() or not any(template_dir.iterdir()):
-        fail("missing templates")
+    check_required_files(root / "src" / "references", REQUIRED_REFERENCES, "source reference")
+    check_required_files(root / "src" / "templates", REQUIRED_TEMPLATES, "source template")
+    check_required_files(root / "src" / "scripts", REQUIRED_SCRIPTS, "source script")
+    check_reference_fixtures(root)
 
     release = root / "release" / "research-architect-codex-skills.tar.gz"
     checksums = root / "release" / "SHA256SUMS"
@@ -96,9 +138,9 @@ def main() -> None:
         fail(f"missing release checksums {checksums}")
 
     generated_root = root / "dist" / "codex" / "skills" / "research-architect"
-    for shared in ["references", "templates", "scripts"]:
-        if not (generated_root / shared).exists():
-            fail(f"generated orchestrator skill is missing shared {shared}/")
+    check_required_files(generated_root / "references", REQUIRED_REFERENCES, "generated reference")
+    check_required_files(generated_root / "templates", REQUIRED_TEMPLATES, "generated template")
+    check_required_files(generated_root / "scripts", REQUIRED_SCRIPTS, "generated script")
 
     print("PASS: Research Architect skill package structure is valid.")
 

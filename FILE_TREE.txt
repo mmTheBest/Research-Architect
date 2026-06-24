@@ -27,6 +27,7 @@ dist/codex/skills/research-architect/manifest.yaml
 dist/codex/skills/research-architect/references/brainstorming-framework.md
 dist/codex/skills/research-architect/references/citation-support-bank.md
 dist/codex/skills/research-architect/references/claim-evidence-framework.md
+dist/codex/skills/research-architect/references/design-family-grammars.md
 dist/codex/skills/research-architect/references/end-to-end-workflow.md
 dist/codex/skills/research-architect/references/ethics-and-boundaries.md
 dist/codex/skills/research-architect/references/first-draft-architecture.md
@@ -38,6 +39,7 @@ dist/codex/skills/research-architect/references/research-spine.md
 dist/codex/skills/research-architect/references/study-design-framework.md
 dist/codex/skills/research-architect/references/video-methodology-generalized.md
 dist/codex/skills/research-architect/scripts/build_release.py
+dist/codex/skills/research-architect/scripts/check_reference_adaptation_fixtures.py
 dist/codex/skills/research-architect/scripts/first_paper_artifact_check.py
 dist/codex/skills/research-architect/scripts/make_source_index.py
 dist/codex/skills/research-architect/scripts/validate_skill_package.py
@@ -46,6 +48,9 @@ dist/codex/skills/research-architect/templates/citation_support_bank.csv
 dist/codex/skills/research-architect/templates/claim_register.csv
 dist/codex/skills/research-architect/templates/corpus_inventory.csv
 dist/codex/skills/research-architect/templates/evidence_bank.csv
+dist/codex/skills/research-architect/templates/evidence_display_map.csv
+dist/codex/skills/research-architect/templates/exemplar_adaptation_plan.md
+dist/codex/skills/research-architect/templates/exemplar_logic_profile.md
 dist/codex/skills/research-architect/templates/experiment_registry.csv
 dist/codex/skills/research-architect/templates/figure_plan.csv
 dist/codex/skills/research-architect/templates/first_draft_outline.md
@@ -54,14 +59,21 @@ dist/codex/skills/research-architect/templates/idea_candidate_matrix.csv
 dist/codex/skills/research-architect/templates/motivation_options.md
 dist/codex/skills/research-architect/templates/project_config.json
 dist/codex/skills/research-architect/templates/section_blueprints.md
+dist/codex/skills/research-architect/templates/study_component_registry.csv
 dist/codex/skills/research-architect/templates/study_design_brief.md
 dist/codex/skills/research-architect/templates/writing_rationale_matrix.csv
 en/README.md
+evals/reference_adaptation/README.md
+evals/reference_adaptation/comparative_case.json
+evals/reference_adaptation/mixed_methods.json
+evals/reference_adaptation/qualitative_interpretive.json
+evals/reference_adaptation/quantitative_associational.json
 release/SHA256SUMS
 release/research-architect-codex-skills.tar.gz
 src/references/brainstorming-framework.md
 src/references/citation-support-bank.md
 src/references/claim-evidence-framework.md
+src/references/design-family-grammars.md
 src/references/end-to-end-workflow.md
 src/references/ethics-and-boundaries.md
 src/references/first-draft-architecture.md
@@ -73,6 +85,7 @@ src/references/research-spine.md
 src/references/study-design-framework.md
 src/references/video-methodology-generalized.md
 src/scripts/build_release.py
+src/scripts/check_reference_adaptation_fixtures.py
 src/scripts/first_paper_artifact_check.py
 src/scripts/make_source_index.py
 src/scripts/validate_skill_package.py
@@ -99,6 +112,9 @@ src/templates/citation_support_bank.csv
 src/templates/claim_register.csv
 src/templates/corpus_inventory.csv
 src/templates/evidence_bank.csv
+src/templates/evidence_display_map.csv
+src/templates/exemplar_adaptation_plan.md
+src/templates/exemplar_logic_profile.md
 src/templates/experiment_registry.csv
 src/templates/figure_plan.csv
 src/templates/first_draft_outline.md
@@ -107,5 +123,6 @@ src/templates/idea_candidate_matrix.csv
 src/templates/motivation_options.md
 src/templates/project_config.json
 src/templates/section_blueprints.md
+src/templates/study_component_registry.csv
 src/templates/study_design_brief.md
 src/templates/writing_rationale_matrix.csv

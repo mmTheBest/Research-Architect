@@ -1,43 +1,47 @@
 # First Draft Outline
 
+Select and rename sections according to the confirmed research spine and design family.
+
 ## Title
 
 ## Abstract / Summary
 
-- Problem:
-- Gap:
-- Approach:
-- Evidence:
-- Main bounded claim:
-- Scope:
+- Phenomenon or problem:
+- Significance:
+- Unresolved tension:
+- Theoretical or conceptual orientation:
+- Logic of inquiry:
+- Evidence or warrants:
+- Main bounded contribution:
+- Scope and inference boundary:
 
 ## Introduction
 
-1. Problem context.
-2. What is known.
-3. What remains unresolved.
-4. Research spine and contribution.
+1. Establish the phenomenon and significance.
+2. State what prior work establishes.
+3. Define the unresolved tension or debate.
+4. Present the research question, orientation, and contribution.
 
-## Background / Related Work
+## Theory / Conceptual Framing
 
-Organize by function, not chronology.
+State the role of theory, concepts, assumptions, or values when the design requires it.
 
-## Methods / Study Design
+## Methods / Sources / Argumentative Procedure
 
-Describe only what is needed to evaluate the claim.
+Describe the selection logic, evidence generation or source construction, analysis or interpretation, comparison or warrant, validity criteria, ethics, and inference boundary required to evaluate the claim.
 
-## Results / Analysis
+## Findings / Analysis / Argument
 
-Order results by the evidence chain.
+Order empirical findings, interpretations, process evidence, synthesis, or argument steps by the evidence chain.
 
 ## Discussion
 
-Interpret evidence, compare with prior work, and identify scope.
+Interpret the contribution, compare with prior work, examine alternatives, and identify transfer or generalization.
 
-## Limitations
+## Limitations and Positional Boundaries
 
-State what the study does not prove.
+State design, source, evidence, access, researcher-position, and inference limits.
 
 ## Conclusion
 
-Restate only the supported contribution.
+Restate the supported contribution and its conditions.

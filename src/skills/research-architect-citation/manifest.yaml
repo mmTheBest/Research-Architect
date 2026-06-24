@@ -1,4 +1,4 @@
 name: research-architect-citation
 description: "Builds a claim-level citation support bank for background, positioning, methods, interpretation, and limitations."
-version: 0.2.0
+version: 0.3.0
 entrypoint: SKILL.md

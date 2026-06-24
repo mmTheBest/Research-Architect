@@ -1,11 +1,11 @@
-# Motivation Options After Brainstorming and Literature Mapping
+# Motivation Options After Reference Analysis and Literature Mapping
 
-| Option | One-Sentence Research Spine | Core Contribution | Required Evidence | Why It Matters | Why It Is Feasible | Main Risk | Scope Boundary |
-|---|---|---|---|---|---|---|---|
-| A |  |  |  |  |  |  |  |
-| B |  |  |  |  |  |  |  |
-| C |  |  |  |  |  |  |  |
+| Option | One-Sentence Research Spine | Reference Logic Preserved | Required Adaptation | User-Specific Contribution | Required Evidence or Warrant | Why It Matters | Why It Is Feasible | Main Risk | Scope Boundary |
+|---|---|---|---|---|---|---|---|---|---|
+| A |  |  |  |  |  |  |  |  |  |
+| B |  |  |  |  |  |  |  |  |  |
+| C |  |  |  |  |  |  |  |  |  |
 
 ## Recommendation
 
-State which option is strongest and why. Then stop for user confirmation before drafting.
+State which option offers the strongest feasible adaptation and why. Stop for user confirmation before writing `confirmed_research_spine.md`.

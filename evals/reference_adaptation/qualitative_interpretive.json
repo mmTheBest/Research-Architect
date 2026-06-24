@@ -1,0 +1,84 @@
+{
+  "fixture_id": "RA-REF-QUAL-001",
+  "title": "Adapt a qualitative identity study to instructors' adoption of generative AI",
+  "design_family": "qualitative_interpretive",
+  "target_reference": {
+    "research_logic": [
+      "Use purposive sampling to capture variation in professional identity.",
+      "Generate semi-structured interview material around critical incidents.",
+      "Develop themes iteratively through coding and memoing.",
+      "Use negative cases and researcher reflexivity to refine interpretation."
+    ],
+    "strengths": [
+      "Sampling is tied to theoretical variation rather than convenience alone.",
+      "Critical incidents connect abstract identity claims to situated evidence.",
+      "Negative cases prevent themes from becoming overly uniform."
+    ],
+    "context_bound_elements": [
+      "The original profession has different institutional norms.",
+      "The original interview guide assumes a stable professional identity category.",
+      "The researcher's relationship to participants differs."
+    ]
+  },
+  "user_project": {
+    "topic": "How community-college instructors interpret generative-AI adoption in relation to teaching identity and professional responsibility.",
+    "available_materials": [
+      "Access to instructors at two community colleges.",
+      "Ability to conduct and transcribe interviews.",
+      "Institutional AI-policy documents."
+    ],
+    "constraints": [
+      "Small purposive sample.",
+      "Researcher works in an adjacent educational role.",
+      "Sensitive concerns about institutional policy and job security."
+    ]
+  },
+  "expected": {
+    "required_extraction_dimensions": [
+      "epistemic orientation",
+      "purposive sampling",
+      "researcher role",
+      "critical-incident interviewing",
+      "coding and memoing",
+      "negative cases",
+      "credibility and transferability"
+    ],
+    "required_adaptation_moves": [
+      {
+        "reference_move": "Sample participants across theoretically meaningful identity positions.",
+        "decision": "ADAPT",
+        "required_user_action": "Define variation in discipline, employment status, and AI-policy exposure before recruitment."
+      },
+      {
+        "reference_move": "Use critical incidents to ground identity interpretation.",
+        "decision": "TRANSFER",
+        "required_user_action": "Ask for concrete teaching episodes involving AI rather than only general attitudes."
+      },
+      {
+        "reference_move": "Treat the researcher's professional familiarity as unproblematic access.",
+        "decision": "REPLACE",
+        "required_user_action": "Document positionality, role boundaries, and how prior assumptions are handled during analysis."
+      }
+    ],
+    "required_design_components": [
+      "context description",
+      "purposive selection rationale",
+      "consent and confidentiality",
+      "researcher positionality",
+      "interview protocol",
+      "analytic development",
+      "negative-case analysis",
+      "quotation rules",
+      "transferability boundary"
+    ],
+    "required_claim_boundaries": [
+      "Themes describe contextualized interpretations among the selected participants.",
+      "The study may develop concepts or process insights without estimating prevalence."
+    ],
+    "forbidden_inferences": [
+      "Most community-college instructors hold the identified view.",
+      "Interview themes prove that institutional policy causes identity change.",
+      "A small purposive sample is statistically representative."
+    ]
+  }
+}

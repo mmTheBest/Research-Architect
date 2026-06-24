@@ -1,41 +1,49 @@
 # Quality Gates
 
-## Gate 1 — Spine clarity
+## Gate 1 — Target-reference logic
 
-Pass only if the project has a confirmed research spine with problem, motivation, gap, approach, evidence, claim, and scope.
+When target references exist, pass only if the workflow identifies their load-bearing question, theory, selection, evidence, analysis, comparison/warrant, validity, display, and limitation logic.
 
-## Gate 2 — Feasibility
+## Gate 2 — Adaptation validity
 
-Pass only if the evidence required for the claim is available or executable within the stated constraints.
+When target references exist, pass only if each load-bearing move is transferred, adapted, replaced, or omitted with rationale. Topic substitution alone fails.
 
-## Gate 3 — Literature grounding
+## Gate 3 — Research-spine clarity
 
-Pass only if the literature map distinguishes concepts, methods, baselines, evidence standards, and gaps.
+Pass only if the project has a confirmed spine with a bounded phenomenon or problem, significance, unresolved tension, orientation, question, logic of inquiry, evidence or warrants, contribution, and scope.
 
-## Gate 4 — Study design validity
+## Gate 4 — Feasibility
 
-Pass only if the design includes comparison/control logic, evaluation criteria, robustness checks, and interpretation boundaries appropriate to the evidence mode.
+Pass only if required evidence, sources, participants, cases, access, analysis, or argumentative work is available or executable within the stated constraints.
 
-## Gate 5 — Evidence traceability
+## Gate 5 — Literature grounding
 
-Pass only if every central claim links to evidence IDs, citation IDs, or explicit limitation language.
+Pass only if the literature map distinguishes concepts, theories, methods, comparisons or warrants, evidence standards, debates, and gaps.
 
-## Gate 6 — Figure logic
+## Gate 6 — Design-family validity
 
-Pass only if every planned figure has a function in the argument and is tied to evidence.
+Pass only if selection, evidence generation, analysis, validity criteria, ethics, and inference boundaries match the selected design family.
 
-## Gate 7 — Citation integrity
+## Gate 7 — Evidence traceability
 
-Pass only if citations are real, relevant, and used for claims they support.
+Pass only if every central claim links to evidence IDs, citation IDs, locators, or explicit limitation language.
 
-## Gate 8 — Non-copying
+## Gate 8 — Evidence-display logic
 
-Pass only if exemplar use is structural and all wording, figures, and claims are original to the user’s work.
+Pass only if every figure, table, quotation set, matrix, chronology, process map, conceptual model, or joint display serves an argument function and remains within the evidence boundary.
 
-## Gate 9 — Draft completeness
+## Gate 9 — Citation integrity
 
-Pass only if the draft contains all sections needed by the research spine and does not omit methods, limitations, or evidence needed to evaluate the claim.
+Pass only if citations are real, relevant, verified to the available level, and used for claims they support.
 
-## Gate 10 — Overclaim control
+## Gate 10 — Independence and non-copying
 
-Pass only if causal, mechanistic, generalization, performance, or practical-impact claims are properly bounded.
+Pass only if reference use is functional and the user's wording, question, materials, findings, claims, displays, and contribution remain independent.
+
+## Gate 11 — Draft completeness
+
+Pass only if the draft contains the methods, source logic, positionality, integration, counterarguments, limitations, findings, or other components required by its research spine and design family.
+
+## Gate 12 — Inference-boundary control
+
+Pass only if causal, prevalence, mechanistic, interpretive, theoretical, normative, transfer, generalization, performance, and practical-impact claims remain within their available warrants.

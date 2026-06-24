@@ -1,0 +1,82 @@
+{
+  "fixture_id": "RA-REF-QUANT-001",
+  "title": "Adapt a theory-led survey and mediation design to generative-AI use and academic engagement",
+  "design_family": "quantitative_associational",
+  "target_reference": {
+    "research_logic": [
+      "Use theory to connect an exposure, a mediator, and an outcome.",
+      "Operationalize constructs with validated measures.",
+      "Estimate direct and indirect associations with alternative specifications.",
+      "Bound conclusions to the cross-sectional design."
+    ],
+    "strengths": [
+      "The construct sequence makes the research question testable.",
+      "The mediation model gives each analysis a clear argumentative function.",
+      "Sensitivity models expose dependence on measurement and covariate choices."
+    ],
+    "context_bound_elements": [
+      "The original exposure variable is narrower than generative-AI use.",
+      "The original population and validated scales may not transfer.",
+      "Cross-sectional timing cannot establish causal mediation."
+    ]
+  },
+  "user_project": {
+    "topic": "How generative-AI use relates to university students' academic engagement through academic self-efficacy.",
+    "available_materials": [
+      "Access to university students for a one-time survey.",
+      "Candidate self-efficacy and engagement scales.",
+      "No longitudinal observations."
+    ],
+    "constraints": [
+      "One semester.",
+      "No randomized intervention.",
+      "Limited ability to recruit across institutions."
+    ]
+  },
+  "expected": {
+    "required_extraction_dimensions": [
+      "theory role",
+      "construct operationalization",
+      "sampling logic",
+      "mediation analysis function",
+      "alternative specifications",
+      "cross-sectional inference boundary"
+    ],
+    "required_adaptation_moves": [
+      {
+        "reference_move": "Use one exposure variable in a theory-led mediation model.",
+        "decision": "ADAPT",
+        "required_user_action": "Define distinct dimensions of generative-AI use before selecting an exposure measure."
+      },
+      {
+        "reference_move": "Reuse validated measures for mediator and outcome.",
+        "decision": "ADAPT",
+        "required_user_action": "Verify construct validity and reliability for the new population and language."
+      },
+      {
+        "reference_move": "Interpret an indirect effect as a mechanism.",
+        "decision": "REPLACE",
+        "required_user_action": "Frame the estimate as an indirect association unless temporal or causal evidence is added."
+      }
+    ],
+    "required_design_components": [
+      "construct definitions",
+      "sampling frame",
+      "measurement validity",
+      "covariate rationale",
+      "missing-data plan",
+      "effect sizes and uncertainty",
+      "alternative specifications",
+      "associational claim language"
+    ],
+    "required_claim_boundaries": [
+      "The study may report an indirect association pattern.",
+      "Generalization is limited to the sampled student context."
+    ],
+    "forbidden_inferences": [
+      "Generative-AI use causes academic engagement.",
+      "Academic self-efficacy is a proven causal mechanism.",
+      "The sample represents all university students."
+    ]
+  }
+}

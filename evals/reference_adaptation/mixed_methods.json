@@ -1,0 +1,87 @@
+{
+  "fixture_id": "RA-REF-MIXED-001",
+  "title": "Adapt a sequential explanatory design to AI feedback and student revision",
+  "design_family": "mixed_methods",
+  "target_reference": {
+    "research_logic": [
+      "Estimate heterogeneous outcome patterns in a quantitative first strand.",
+      "Purposefully select follow-up participants from contrasting quantitative profiles.",
+      "Use interviews to explain how participants produced the observed patterns.",
+      "Integrate strands through a joint display and meta-inference."
+    ],
+    "strengths": [
+      "The second strand is selected from a concrete quantitative puzzle.",
+      "Sampling connects the two strands rather than treating them as parallel projects.",
+      "The joint display makes convergence and divergence visible."
+    ],
+    "context_bound_elements": [
+      "The original outcome is directly observed rather than rubric-scored.",
+      "The original participants use a standardized intervention.",
+      "The original sample is large enough for stable subgroup estimation."
+    ]
+  },
+  "user_project": {
+    "topic": "How AI-generated feedback relates to the quality of student revisions and why students respond differently.",
+    "available_materials": [
+      "Draft and revised essays.",
+      "Feedback logs.",
+      "Revision-quality rubric.",
+      "Access to a subset of students for interviews."
+    ],
+    "constraints": [
+      "Moderate course-level sample.",
+      "Students use different AI systems and prompts.",
+      "Interview participation may be selective."
+    ]
+  },
+  "expected": {
+    "required_extraction_dimensions": [
+      "purpose of each strand",
+      "strand sequence",
+      "priority",
+      "sampling connection",
+      "integration point",
+      "joint display",
+      "divergence handling",
+      "meta-inference boundary"
+    ],
+    "required_adaptation_moves": [
+      {
+        "reference_move": "Use quantitative profiles to select contrasting follow-up participants.",
+        "decision": "TRANSFER",
+        "required_user_action": "Define revision-response profiles before interview sampling."
+      },
+      {
+        "reference_move": "Treat the exposure as standardized.",
+        "decision": "ADAPT",
+        "required_user_action": "Record AI system, prompt, feedback type, and usage pattern as exposure heterogeneity."
+      },
+      {
+        "reference_move": "Interpret subgroup differences from a large sample.",
+        "decision": "ADAPT",
+        "required_user_action": "Use cautious profile description and uncertainty rather than unstable subgroup effect claims."
+      }
+    ],
+    "required_design_components": [
+      "quantitative strand question",
+      "qualitative strand question",
+      "sequence and priority",
+      "connected sampling",
+      "rubric validity and reliability",
+      "interview protocol",
+      "joint display",
+      "convergence and divergence analysis",
+      "meta-inference",
+      "integration limitations"
+    ],
+    "required_claim_boundaries": [
+      "The integrated study may explain observed revision-response patterns in the studied courses.",
+      "Each component of the final claim identifies its quantitative, qualitative, or integrated warrant."
+    ],
+    "forbidden_inferences": [
+      "AI feedback causes revision improvement without an identification strategy.",
+      "Interview accounts validate every quantitative association.",
+      "Parallel presentation of two strands counts as integration."
+    ]
+  }
+}

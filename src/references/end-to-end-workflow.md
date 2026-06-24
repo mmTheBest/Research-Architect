@@ -1,92 +1,124 @@
 # End-to-End Workflow
 
-## Stage 0 — Intake
+## Stage 0 — Intake and target definition
 
-Collect the current state of the project:
+Collect:
 
-- topic or raw idea;
-- available materials;
-- existing data, code, experiments, figures, notes, or draft fragments;
+- target reference paper or papers;
+- the strengths the user wants to learn from;
+- the user's topic or raw idea;
+- available research materials;
 - constraints;
 - expected first output;
-- user uncertainty.
+- uncertainty that changes the design.
 
 Output: `project_config.json`, `source_map.md`, `source_inventory.md`.
 
-## Stage 1 — Brainstorming
+## Stage 1 — Target-reference analysis
 
-Convert the topic into candidate research questions. A useful candidate is not merely interesting. It must have:
+When target references exist, decompose them before ordinary brainstorming.
 
-- a definable object of study;
-- a possible contribution;
-- a feasible evidence path;
-- a clear comparison or baseline;
-- an identifiable failure mode.
+Extract:
+
+- research object and starting tension;
+- theory or conceptual role;
+- question-forming move;
+- logic of inquiry;
+- evidence-generation and analysis sequence;
+- comparison or warrant logic;
+- validity strategy;
+- evidence-display and rhetorical functions;
+- limitations;
+- transferable strengths and context boundaries.
+
+Map each load-bearing move to `TRANSFER`, `ADAPT`, `REPLACE`, or `OMIT_WITH_RATIONALE`.
+
+Output: `exemplar_logic_profile.md`, preliminary `exemplar_adaptation_plan.md`.
+
+When no target paper exists, proceed to Stage 2 and identify candidate exemplars during Stage 3.
+
+## Stage 2 — Adapted brainstorming
+
+Generate distinct research options from:
+
+- target-paper logic when available;
+- the user's topic and materials;
+- feasible evidence or argumentative warrants;
+- design-family alternatives;
+- likely contribution and scope.
 
 Output: `problem_landscape.md`, `idea_candidate_matrix.md`, `research_question_options.md`, `feasibility_filter.md`.
 
-## Stage 2 — Literature and exemplar mapping
+## Stage 3 — Literature positioning and final adaptation
 
-Build a structured reading map, not a reading list.
+Build a structured research map:
 
-Separate three roles:
+- concepts and constructs;
+- theories and debates;
+- methods and interpretive approaches;
+- comparisons, counterfactuals, rival explanations, and counterarguments;
+- evidence and validity standards;
+- unresolved gaps or tensions;
+- exemplar functions.
 
-- conceptual sources define the problem and terms;
-- technical sources define methods, baselines, and evaluation expectations;
-- exemplar sources teach argument structure and evidence sequencing.
+Finalize the adaptation plan against the literature and user constraints.
 
-Output: `concept_dossier.md`, `corpus_inventory.md`, `exemplar_method_map.md`, `sota_gap_map.md`, `motivation_options_after_literature.md`.
+Output: `concept_dossier.md`, `corpus_inventory.md`, `exemplar_method_map.md`, final `exemplar_adaptation_plan.md`, `sota_gap_map.md`, `motivation_options_after_literature.md`.
 
-## Stage 3 — Research spine confirmation
+## Stage 4 — Research-spine confirmation
 
-Produce several candidate spines and stop for user selection.
+Produce 2-5 candidate spines that state the inherited logic, required adaptation, evidence or warrant, contribution, and scope. Stop for user selection.
 
-Output: `confirmed_research_spine.md` after user confirmation.
+Output: `confirmed_research_spine.md`.
 
-## Stage 4 — Study design
+## Stage 5 — Field-appropriate study design
 
-Translate the confirmed spine into an executable design.
+Infer and confirm the design family. Translate the spine and adaptation plan into:
 
-The design must state:
+- research questions;
+- theoretical or conceptual orientation;
+- unit, case, population, or corpus;
+- selection and sampling logic;
+- evidence-generation or source-construction procedure;
+- analysis or interpretation procedure;
+- comparison, counterfactual, rival explanation, or warrant;
+- evaluation and credibility criteria;
+- negative cases, counterexamples, sensitivity, and scope checks;
+- ethics, access, and researcher-position considerations;
+- explicit user actions and completion criteria.
 
-- research question;
-- hypothesis or expected relationship when applicable;
-- data/material requirements;
-- method or intervention;
-- comparison or baseline;
-- evaluation metrics or interpretive criteria;
-- robustness checks;
-- negative controls or failure cases when applicable;
-- what claim each result can support.
+Output: `study_design_brief.md`, `analysis_plan.md`, `evaluation_plan.md`, `study_component_registry.md`, `threats_to_validity.md`.
 
-Output: `study_design_brief.md`, `analysis_plan.md`, `evaluation_plan.md`, `experiment_registry.md`, `threats_to_validity.md`.
+Experimental or computational projects may additionally emit `experiment_registry.md`.
 
-## Stage 5 — Evidence bank
+## Stage 6 — Evidence and claim architecture
 
-After execution, convert results into auditable evidence.
+After execution, convert research materials into auditable evidence and claims.
 
-Output: `evidence_bank.md`, `claim_register.md`, `figure_asset_map.md`, `claim_strength_calibration.md`.
+Output: `evidence_bank.md`, `claim_register.md`, `evidence_display_map.md`, `claim_strength_calibration.md`, `result_interpretation_notes.md`.
 
-## Stage 6 — Citation support bank
+Figure-centered projects may additionally emit `figure_asset_map.md`.
 
-Bind literature to claim functions. Do not dump references into a bibliography.
+## Stage 7 — Citation support
+
+Bind literature to exact claim functions, locators, and support boundaries.
 
 Output: `citation_support_bank.md`.
 
-## Stage 7 — Draft blueprint
+## Stage 8 — Draft blueprint
 
-Create section-level and paragraph-level writing plans.
+Create section-level and argument-unit plans. Each adapted move identifies the reference principle, project-specific implementation, evidence anchor, and claim boundary.
 
 Output: `section_blueprints.md`, `writing_rationale_matrix.md`.
 
-## Stage 8 — First draft
+## Stage 9 — First draft
 
-Write the draft from the research spine, evidence bank, claim register, citation support bank, and writing rationale matrix.
+Write from the confirmed spine, adaptation plan, evidence bank, claim register, citation support bank, evidence-display plan, and rationale matrix.
 
 Output: `first_draft/main.md`, optional `first_draft/main.tex`.
 
-## Stage 9 — Audit
+## Stage 10 — Audit
 
-Check the draft against all upstream artifacts.
+Check target-reference understanding, adaptation validity, design-family fit, evidence and citation traceability, inference boundaries, independence, and completeness.
 
 Output: `audit_report.md`, `revision_queue.md`.

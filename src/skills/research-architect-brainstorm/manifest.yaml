@@ -1,4 +1,4 @@
 name: research-architect-brainstorm
-description: "Converts a raw topic or scattered materials into feasible research-question candidates and candidate research spines."
-version: 0.2.0
+description: "Converts a target paper's transferable logic, a raw topic, and available materials into distinct feasible research-question and adaptation options."
+version: 0.3.0
 entrypoint: SKILL.md
