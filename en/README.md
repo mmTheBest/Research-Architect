@@ -1,10 +1,10 @@
 # Research Architect Skill Suite
 
-English | [简体中文](https://github.com/mmTheBest/Research-Architect)
+English | [简体中文](../README.md)
 
 **Research Architect** is a research workflow skill suite for moving from a raw topic, partial materials, or scattered results to a coherent research-paper draft.
 
-It provides an end-to-end research workflow for building a study from scratch: selecting a research question, conducting a focused literature review, identifying the research gap, designing the study, organizing evidence, controlling claims, planning figures, managing citation support, and drafting an auditable manuscript. The skill turns early-stage research ideas into a structured, reproducible path from brainstorming to a credible first draft.
+It provides an end-to-end research workflow for building a study from scratch: selecting a research question, conducting a focused literature review, identifying the research gap, designing the study, organizing evidence, controlling claims, planning evidence displays, managing citation support, and drafting an auditable manuscript. The skill turns early-stage research ideas into a structured, reproducible path from brainstorming to a credible first draft.
 
 ## Mental model
 
@@ -24,13 +24,14 @@ Example task:
 
 ```text
 I have a broad idea: genetic regulation in lung cancer.
-Use Research Architect to propose feasible research-question options,
-then help me choose one and build the research spine.
+I also have two target reference papers I want to learn from.
+Use Research Architect to extract their research logic, propose feasible
+research-question options, and build an adapted research spine.
 ```
 
 ## Core idea
 
-Research Architect helps you learn research design from reference papers. It decomposes strong papers into reusable research structure: how they frame a problem, narrow scope, define the gap, set up experiments, choose baselines and controls, organize figures, and keep each claim within its evidence boundary.
+Research Architect helps you learn research design from target reference papers. It decomposes strong papers into reusable research logic: how they frame a problem, narrow scope, define the gap, choose a design family, set up comparison or warrant logic, organize evidence displays, and keep each claim within its evidence boundary.
 
 The goal is to transfer the research logic behind good papers into your own project without copying their text, figures, data, results, citation choices, or claims.
 
@@ -49,15 +50,17 @@ The goal is to transfer the research logic behind good papers into your own proj
 
 ```text
 Raw idea
-  -> Literature and exemplar mapping
+  -> Target-reference logic extraction
+  -> Exemplar-to-project adaptation plan
   -> Research-question options and research gap
   -> Research spine
   -> Study design
-  -> Experiment and analysis plan
+  -> Study component and analysis plan
   -> Evidence bank
   -> Claim register
   -> Citation support bank
-  -> Section blueprint
+  -> Evidence display map
+  -> Section blueprint and writing rationale matrix
   -> First draft
   -> Audit and revision queue
 ```
@@ -71,9 +74,9 @@ Research Architect treats references as research-design examples. It analyzes:
 - how it controls difficulty;
 - how it defines the research gap;
 - how it expresses contribution;
-- how contribution becomes study design;
-- how baselines, controls, ablations, and validation are arranged;
-- how figures are organized;
+- how contribution becomes field-appropriate study design;
+- how comparison, counterfactual, negative-case, warrant, or validation logic is arranged;
+- how figures, tables, quotation matrices, case maps, conceptual models, or other evidence displays are organized;
 - how results become bounded claims;
 - how citations and evidence support the manuscript narrative.
 
@@ -81,18 +84,18 @@ Research Architect treats references as research-design examples. It analyzes:
 
 Research Architect pushes a broad topic into concrete research judgment by asking:
 
-1. What research paradigm does this direction belong to?
+1. What design family does this direction belong to?
 2. What has prior work already established?
 3. Which gaps remain open and answerable?
 4. Which gap fits the available data, methods, time, and resources?
 5. Does difficulty come from data, method, validation, theory, or writing structure?
 6. Does the contribution come from a new question, dataset, method, combination, validation strategy, or evidence framework?
-7. What experiments, analyses, and controls are needed for the central claim?
-8. Which results belong in main figures and which belong in supplementary material?
+7. What evidence, analysis, comparison, or warrant is needed for the central claim?
+8. Which materials belong in core evidence displays and which belong in supplementary material?
 
 ## How it helps design studies
 
-Research Architect converts the design logic learned from references into a project-specific study design. It helps plan core experiments, baselines, controls, ablations, robustness checks, validation experiments, failure cases, threats to validity, evaluation metrics, and claim-strength boundaries.
+Research Architect converts the design logic learned from references into a project-specific study design. It helps plan study components, analysis plans, comparison or warrant logic, negative cases, credibility checks, threats to validity, evidence displays, and claim-strength boundaries.
 
 ## How it helps define contribution
 
@@ -100,7 +103,7 @@ Research Architect breaks "contribution" into more concrete types, such as a cle
 
 ## Outputs
 
-A complete run leaves a transparent trail under `paper_output/`, including research spine, source inventory, literature map, study design, analysis plan, experiment registry, evidence bank, claim register, citation support bank, writing rationale matrix, manuscript draft, and audit report.
+A complete run leaves a transparent trail under `paper_output/`, including research spine, source inventory, literature map, exemplar logic profile, exemplar adaptation plan, study design, analysis plan, study component registry, evidence bank, claim register, evidence display map, citation support bank, writing rationale matrix, manuscript draft, and audit report. `experiment_registry.md` and `figure_asset_map.md` remain supported as compatibility artifacts, while `study_component_registry.md` and `evidence_display_map.md` are the canonical field-general names.
 
 ## Installation
 
@@ -152,3 +155,7 @@ This project is released under the MIT License. See [LICENSE](../LICENSE).
 ## Changelog
 
 Future versions will add skill evals, expand validation, and tune skill descriptions so Codex and Claude route to the right branch skill more reliably. See [CHANGELOG.md](../CHANGELOG.md).
+
+## Update note
+
+Release `v0.3.0` is now available. This release makes target reference papers first-class workflow inputs and adds exemplar logic profiles, adaptation plans, design-family routing, and field-general study/evidence artifacts.
