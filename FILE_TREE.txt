@@ -4,6 +4,7 @@ FILE_TREE.txt
 INSTALL.md
 LICENSE
 README.md
+README.zh-CN.md
 assets/research-architect-mental-model.png
 assets/research-architect-mental-model.svg
 dist/codex/skills/research-architect-audit/SKILL.md
@@ -62,7 +63,6 @@ dist/codex/skills/research-architect/templates/section_blueprints.md
 dist/codex/skills/research-architect/templates/study_component_registry.csv
 dist/codex/skills/research-architect/templates/study_design_brief.md
 dist/codex/skills/research-architect/templates/writing_rationale_matrix.csv
-en/README.md
 evals/reference_adaptation/README.md
 evals/reference_adaptation/comparative_case.json
 evals/reference_adaptation/mixed_methods.json
