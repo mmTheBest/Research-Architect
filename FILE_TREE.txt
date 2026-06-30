@@ -1,3 +1,4 @@
+.gitignore
 CHANGELOG.md
 DESIGN_NOTES.md
 FILE_TREE.txt
@@ -43,6 +44,7 @@ dist/codex/skills/research-architect/scripts/build_release.py
 dist/codex/skills/research-architect/scripts/check_reference_adaptation_fixtures.py
 dist/codex/skills/research-architect/scripts/first_paper_artifact_check.py
 dist/codex/skills/research-architect/scripts/make_source_index.py
+dist/codex/skills/research-architect/scripts/run_reference_adaptation_eval.py
 dist/codex/skills/research-architect/scripts/validate_skill_package.py
 dist/codex/skills/research-architect/templates/audit_report.md
 dist/codex/skills/research-architect/templates/citation_support_bank.csv
@@ -63,6 +65,7 @@ dist/codex/skills/research-architect/templates/section_blueprints.md
 dist/codex/skills/research-architect/templates/study_component_registry.csv
 dist/codex/skills/research-architect/templates/study_design_brief.md
 dist/codex/skills/research-architect/templates/writing_rationale_matrix.csv
+docs/plans/2026-06-30-reference-adaptation-eval-harness.md
 evals/reference_adaptation/README.md
 evals/reference_adaptation/comparative_case.json
 evals/reference_adaptation/mixed_methods.json
@@ -88,6 +91,7 @@ src/scripts/build_release.py
 src/scripts/check_reference_adaptation_fixtures.py
 src/scripts/first_paper_artifact_check.py
 src/scripts/make_source_index.py
+src/scripts/run_reference_adaptation_eval.py
 src/scripts/validate_skill_package.py
 src/skills/research-architect-audit/SKILL.md
 src/skills/research-architect-audit/manifest.yaml
@@ -126,3 +130,5 @@ src/templates/section_blueprints.md
 src/templates/study_component_registry.csv
 src/templates/study_design_brief.md
 src/templates/writing_rationale_matrix.csv
+tests/__init__.py
+tests/test_reference_adaptation_eval.py
