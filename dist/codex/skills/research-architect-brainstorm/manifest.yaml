@@ -1,4 +1,4 @@
 name: research-architect-brainstorm
 description: "Converts a target paper's transferable logic, a raw topic, and available materials into distinct feasible research-question and adaptation options."
-version: 0.3.0
+version: 0.3.1
 entrypoint: SKILL.md

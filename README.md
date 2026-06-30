@@ -8,7 +8,7 @@ It provides an end-to-end research workflow for building a study from scratch: s
 
 ## Mental model
 
-![Research Architect mental model](assets/research-architect-mental-model.png)
+![Research Architect mental model](assets/research-architect-mental-model.svg)
 
 Research Architect can run end-to-end or one branch at a time. The core idea is simple: preserve a transparent trail from raw idea to research spine, study design, evidence, claims, citation support, draft, and audit.
 
@@ -144,6 +144,24 @@ Branch skills can also be called directly when only one stage is needed.
 - `src/templates/` stores output templates;
 - `src/scripts/` stores validation, indexing, and release-building scripts.
 
+## Evaluation
+
+Reference-adaptation fixtures live in `evals/reference_adaptation/`. Validate the fixture contracts with:
+
+```bash
+python src/scripts/check_reference_adaptation_fixtures.py
+```
+
+Score generated artifact bundles with:
+
+```bash
+python src/scripts/run_reference_adaptation_eval.py \
+  --generated-root eval_runs/reference_adaptation/generated \
+  --output-dir eval_runs/reference_adaptation/latest
+```
+
+The deterministic harness scores extraction coverage, adaptation validity, design-family fit, actionability, claim control, and copying-risk control. A fixture passes at 85/100 or higher with no critical failures.
+
 ## Safety boundary
 
 External papers are used to learn structure, problem framing, method logic, experiment sequencing, evidence standards, and writing organization. User-provided data, results, analyses, and evidence remain authoritative. Research Architect calibrates claim language to the strength of the available evidence.
@@ -154,8 +172,10 @@ This project is released under the MIT License. See [LICENSE](LICENSE).
 
 ## Changelog
 
-Future versions will add skill evals, expand validation, and tune skill descriptions so Codex and Claude route to the right branch skill more reliably. See [CHANGELOG.md](CHANGELOG.md).
+Future versions will expand executable skill evals, validation coverage, and skill descriptions so Codex and Claude route to the right branch skill more reliably. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Update note
 
-Release `v0.3.0` is now available. This release makes target reference papers first-class workflow inputs and adds exemplar logic profiles, adaptation plans, design-family routing, and field-general study/evidence artifacts.
+Release `v0.3.1` is now available. This update adds a deterministic reference-adaptation eval harness for scoring generated artifact bundles against the four fixture contracts, with unit coverage, documented pass thresholds, and rebuilt Codex release artifacts.
+
+Release `v0.3.0` made target reference papers first-class workflow inputs and added exemplar logic profiles, adaptation plans, design-family routing, and field-general study/evidence artifacts.

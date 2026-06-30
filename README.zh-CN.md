@@ -6,7 +6,7 @@
 
 ## Mental model
 
-![Research Architect mental model](assets/research-architect-mental-model.png)
+![Research Architect mental model](assets/research-architect-mental-model.svg)
 
 Research Architect 可以端到端运行，也可以按阶段调用。核心思想是保留从原始想法到 research spine、study design、evidence、claim、citation support、draft 和 audit 的透明轨迹。
 
@@ -141,6 +141,24 @@ research-architect
 - `src/templates/` 保存输出模板；
 - `src/scripts/` 保存验证、索引和 release 构建脚本。
 
+## Evaluation
+
+Reference-adaptation fixtures 位于 `evals/reference_adaptation/`。先验证 fixture contract：
+
+```bash
+python src/scripts/check_reference_adaptation_fixtures.py
+```
+
+再对生成的 artifact bundle 评分：
+
+```bash
+python src/scripts/run_reference_adaptation_eval.py \
+  --generated-root eval_runs/reference_adaptation/generated \
+  --output-dir eval_runs/reference_adaptation/latest
+```
+
+该 deterministic harness 会评分 extraction coverage、adaptation validity、design-family fit、actionability、claim control 和 copying-risk control。单个 fixture 需要达到 85/100 且没有 critical failures 才算通过。
+
 ## 使用边界
 
 参考文献的作用是提供研究结构、problem framing、方法逻辑、实验顺序、证据标准和写作组织方式。用户自己的数据、实验结果、分析输出和证据材料始终是论文内容的基础。Research Architect 会根据证据强度控制 claim 的表达，让论文主张与实际材料保持一致。
@@ -151,8 +169,10 @@ research-architect
 
 ## Changelog
 
-后续版本会继续推进 skill evals、扩展 validation，并调整 skill descriptions，让 Codex 和 Claude 更稳定地路由到正确的 branch skill。详见 [CHANGELOG.md](CHANGELOG.md)。
+后续版本会继续扩展 executable skill evals、validation 覆盖范围，并调整 skill descriptions，让 Codex 和 Claude 更稳定地路由到正确的 branch skill。详见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 更新说明
 
-`v0.3.0` 已发布。本版本将目标参考文献设为 workflow 的一等输入，并增加 exemplar logic profile、adaptation plan、design-family routing 以及通用的 study/evidence artifacts。
+`v0.3.1` 已发布。本次更新增加 deterministic reference-adaptation eval harness，可根据四个 fixture contract 对生成的 artifact bundle 评分，并补充单元测试、pass threshold 文档和重新构建的 Codex release artifact。
+
+`v0.3.0` 将目标参考文献设为 workflow 的一等输入，并增加 exemplar logic profile、adaptation plan、design-family routing 以及通用的 study/evidence artifacts。

@@ -2,6 +2,13 @@
 
 The current repository state is treated as the initial version.
 
+## v0.3.1 - 2026-07-01
+
+- Added a deterministic reference-adaptation eval harness that scores generated artifact bundles against the four existing fixtures.
+- Added unit coverage for fixture scoring, critical failures, report generation, and package-validator inclusion.
+- Documented the eval scoring contract, pass threshold, and expected first-baseline behavior.
+- Rebuilt the Codex skill package and release artifact with the new eval tooling.
+
 ## v0.3.0 - 2026-06-24
 
 - Made target reference papers first-class workflow inputs.
@@ -16,6 +23,13 @@ The current repository state is treated as the initial version.
 - Add executable skill evals for realistic reference-adaptation and manuscript-construction tasks.
 - Expand validation to cover source-of-truth drift, generated artifact consistency, and claim-to-source alignment.
 - Tune skill descriptions so Codex and Claude route to the right branch skill with fewer false triggers.
+
+## v0.3.1 - 2026-07-01（中文）
+
+- 增加 deterministic reference-adaptation eval harness，可根据四个现有 fixture 对生成的 artifact bundle 评分。
+- 增加 fixture scoring、critical failures、report generation 和 package-validator inclusion 的单元测试覆盖。
+- 文档化 eval scoring contract、pass threshold 和首次 baseline 的预期行为。
+- 使用新的 eval 工具重新构建 Codex skill package 和 release artifact。
 
 ## v0.3.0 - 2026-06-24（中文）
 

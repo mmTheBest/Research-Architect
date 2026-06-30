@@ -51,6 +51,7 @@ REQUIRED_SCRIPTS = [
     "make_source_index.py",
     "validate_skill_package.py",
     "check_reference_adaptation_fixtures.py",
+    "run_reference_adaptation_eval.py",
 ]
 
 BANNED_PHRASES = [

@@ -1,4 +1,4 @@
 name: research-architect-draft
 description: "Builds a field-appropriate research-paper draft from the confirmed spine, adapted reference logic, evidence bank, claim register, citation bank, evidence displays, and writing rationale matrix."
-version: 0.3.0
+version: 0.3.1
 entrypoint: SKILL.md

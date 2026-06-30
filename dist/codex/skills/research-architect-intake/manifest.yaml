@@ -1,4 +1,4 @@
 name: research-architect-intake
 description: "Collects target reference papers, desired paper outcome, project state, materials, constraints, and next deliverable for the Research Architect workflow."
-version: 0.3.0
+version: 0.3.1
 entrypoint: SKILL.md

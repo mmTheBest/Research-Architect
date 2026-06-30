@@ -1,4 +1,4 @@
 name: research-architect-design
 description: "Converts a confirmed research spine and exemplar adaptation plan into an executable, field-appropriate inquiry, analysis, validation, and user action plan."
-version: 0.3.0
+version: 0.3.1
 entrypoint: SKILL.md

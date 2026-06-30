@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.png
+eval_runs/
+illustration/
+tests/
+docs/plans/

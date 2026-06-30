@@ -1,4 +1,4 @@
 name: research-architect-literature
 description: "Decomposes target papers into transferable research logic, maps that logic onto the user's project, and builds the literature and gap structure needed for an independent study."
-version: 0.3.0
+version: 0.3.1
 entrypoint: SKILL.md

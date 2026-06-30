@@ -1,4 +1,4 @@
 name: research-architect
 description: "Reference-driven research construction workflow that learns transferable logic from target papers and turns it into a research spine, field-appropriate study design, evidence architecture, draft, and audit."
-version: 0.3.0
+version: 0.3.1
 entrypoint: SKILL.md
