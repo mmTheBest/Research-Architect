@@ -6,7 +6,7 @@
 
 ## Mental model
 
-![Research Architect mental model](assets/research-architect-mental-model.svg)
+![Research Architect mental model](assets/research-architect-mental-model.png)
 
 Research Architect 可以端到端运行，也可以按阶段调用。核心思想是保留从原始想法到 research spine、study design、evidence、claim、citation support、draft 和 audit 的透明轨迹。
 
